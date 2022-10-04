@@ -29,7 +29,8 @@ public class Main {
                     rezult.add(firstList.get(i) + ":" + secondList.get(j));
                     yes = true;
                 }
-                if (firstList.get(i).substring(0, 3).equals("bet") && secondList.get(j).substring(0, 3).equals("cem")) {
+                if (firstList.get(i).substring(0, 3).equals("бет") && secondList.get(j).substring(0, 3).equals("цем")
+                || firstList.get(i).substring(0, 3).equals("цем") && secondList.get(j).substring(0, 3).equals("бет")) {
                     rezult.add(firstList.get(i) + ":" + secondList.get(j));
                     yes = true;
                 }
