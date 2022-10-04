@@ -29,10 +29,10 @@ public class Main {
                     rezult.add(firstList.get(i) + ":" + secondList.get(j));
                     yes = true;
                 }
-//                if (firstList.get(i).substring(0, 3).equals("bet") && secondList.get(j).substring(0, 3).equals("cem")) {
-//                    rezult.add(firstList.get(i) + ":" + secondList.get(j));
-//                    yes = true;
-//                }
+                if (firstList.get(i).substring(0, 3).equals("bet") && secondList.get(j).substring(0, 3).equals("cem")) {
+                    rezult.add(firstList.get(i) + ":" + secondList.get(j));
+                    yes = true;
+                }
             }
             if (!yes) {
                 rezult.add(firstList.get(i) + ":?");
