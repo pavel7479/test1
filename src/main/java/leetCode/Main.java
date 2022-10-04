@@ -15,9 +15,7 @@ public class Main {
     public static void matchingLists() throws IOException {
         List<String> list = Files.readAllLines(Paths.get("C:\\input.txt"), StandardCharsets.UTF_8);
         List<String> firstList = new ArrayList<>(list.subList(1, Integer.parseInt(list.get(0)) + 1));
-        List<String> secondList = new ArrayList<>(list.subList(Integer.parseInt(list.get(0)) + 1, list.size()));
-        firstList.remove(firstList.size()-1);
-
+        List<String> secondList = new ArrayList<>(list.subList(Integer.parseInt(list.get(0)) + 2, list.size()));
         int sizeFirstList = firstList.size();
         int sizeSecondList = secondList.size();
 
@@ -31,10 +29,10 @@ public class Main {
                     rezult.add(firstList.get(i) + ":" + secondList.get(j));
                     yes = true;
                 }
-                if (firstList.get(i).substring(0, 4).equals("бето") && secondList.get(j).substring(0, 4).equals("цеме")) {
-                    rezult.add(firstList.get(i) + ":" + secondList.get(j));
-                    yes = true;
-                }
+//                if (firstList.get(i).substring(0, 3).equals("bet") && secondList.get(j).substring(0, 3).equals("cem")) {
+//                    rezult.add(firstList.get(i) + ":" + secondList.get(j));
+//                    yes = true;
+//                }
             }
             if (!yes) {
                 rezult.add(firstList.get(i) + ":?");
